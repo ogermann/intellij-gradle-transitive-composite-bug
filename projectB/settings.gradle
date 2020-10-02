@@ -1,0 +1,13 @@
+rootProject.name = 'projectB'
+
+includeBuild('../projectC') {
+    dependencySubstitution {
+        substitute module('ch.mysign:projectC') with project(':')
+    }
+}
+
+includeBuild('../projectD') {
+    dependencySubstitution {
+        substitute module('ch.mysign:projectD') with project(':')
+    }
+}

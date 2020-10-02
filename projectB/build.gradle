@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'ch.mysign', name: 'projectC'
+    implementation group: 'ch.mysign', name: 'projectD'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
